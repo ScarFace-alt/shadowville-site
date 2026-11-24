@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connecting to Shadowville…</title><link rel="stylesheet" href="../style.css"></head>
+<body><main><div class="tag">Shadowville</div><h1>Connecting…</h1>
+<p>Handing your TikTok sign-in back to the Shadowville studio on this computer.</p>
+<p id="fallback" style="display:none">If nothing happens, make sure Shadowville is running, then <a id="go" href="#">click here</a>.</p>
+<script>
+  // TikTok requires an https redirect; the studio runs locally, so forward the code + state to it unchanged.
+  var target = "http://127.0.0.1:8765/tiktok/callback" + location.search;
+  document.getElementById("go").href = target;
+  setTimeout(function () { document.getElementById("fallback").style.display = "block"; }, 2500);
+  location.replace(target);
+</script></main></body></html>
