@@ -3,7 +3,7 @@
 <title>Fenys Restaurant - concept preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{--a:#C0392B;--fg:#f4f1ec;--mute:#8a8780}*{box-sizing:border-box;margin:0;padding:0}
+:root{--a:#C0532B;--fg:#f4f1ec;--mute:#8a8780}*{box-sizing:border-box;margin:0;padding:0}
 html{background:#000}body{background:#000;color:var(--fg);font:300 17px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;cursor:none}
 a{color:inherit;text-decoration:none;cursor:none}
 .note{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:50;background:#000c;backdrop-filter:blur(8px);border:1px solid #fff2;color:#aaa;font-size:12px;padding:6px 14px;border-radius:99px;white-space:nowrap}
@@ -45,11 +45,11 @@ footer{display:flex;justify-content:space-between;padding:30px 6vw 70px;color:va
 <nav><b>Fenys Restaurant</b><div><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
 <header class="hero"><canvas id="gl"></canvas><div class="hero-in">
 <div class="kicker">restaurant · Alausa, Ikeja</div><h1 id="h1">Fenys Restaurant</h1>
-<p class="tag reveal">Good food in the heart of Alausa, Ikeja</p><a class="btn reveal" href="#contact">Visit Fenys Restaurant in Alausa, Ikeja, or email us at fenys.restaurant@gmail.com <i>&rarr;</i></a></div></header>
-<div class="marquee"><div>Dine In · Takeaway · Group Meals <em>&#10022;</em> Dine In · Takeaway · Group Meals <em>&#10022;</em> Dine In · Takeaway · Group Meals <em>&#10022;</em> Dine In · Takeaway · Group Meals <em>&#10022;</em> Dine In · Takeaway · Group Meals <em>&#10022;</em> Dine In · Takeaway · Group Meals <em>&#10022;</em> </div></div>
-<section id="services"><h2 class="reveal">What we offer</h2><div class="row reveal"><span class="num">01</span><h3>Dine In</h3><p>Sit down and enjoy a freshly prepared meal.</p></div><div class="row reveal"><span class="num">02</span><h3>Takeaway</h3><p>Ask us about taking your meal to go.</p></div><div class="row reveal"><span class="num">03</span><h3>Group Meals</h3><p>Bring your friends, family or colleagues to eat together.</p></div></section>
-<section id="about" class="about"><div><div class="kicker">About</div><p class="reveal">Fenys Restaurant is a restaurant in Alausa, Ikeja. Whether you&#x27;re stopping by for a meal during the workday or meeting friends, come in for freshly prepared food and a warm welcome.</p></div></section>
-<section id="contact" class="contact"><h2 class="reveal">Visit Fenys Restaurant in Alausa, Ikeja, or email us at fenys.restaurant@gmail.com</h2><div class="where">Alausa, Ikeja</div><a class="btn" href="#">Get in touch <i>&rarr;</i></a></section>
+<p class="tag reveal">Good food in Alausa, Ikeja</p><a class="btn reveal" href="#contact">Email us to ask about a visit <i>&rarr;</i></a></div></header>
+<div class="marquee"><div>Dine In · Freshly Prepared Meals · Get in Touch <em>&#10022;</em> Dine In · Freshly Prepared Meals · Get in Touch <em>&#10022;</em> Dine In · Freshly Prepared Meals · Get in Touch <em>&#10022;</em> Dine In · Freshly Prepared Meals · Get in Touch <em>&#10022;</em> Dine In · Freshly Prepared Meals · Get in Touch <em>&#10022;</em> Dine In · Freshly Prepared Meals · Get in Touch <em>&#10022;</em> </div></div>
+<section id="services"><h2 class="reveal">What we offer</h2><div class="row reveal"><span class="num">01</span><h3>Dine In</h3><p>Take a seat and enjoy your meal with us in Alausa, Ikeja.</p></div><div class="row reveal"><span class="num">02</span><h3>Freshly Prepared Meals</h3><p>Food cooked in our kitchen and served to you hot.</p></div><div class="row reveal"><span class="num">03</span><h3>Get in Touch</h3><p>Have a question or want to plan a visit? Send us an email at fenys.restaurant@gmail.com.</p></div></section>
+<section id="about" class="about"><div><div class="kicker">About</div><p class="reveal">Fenys Restaurant is a place to eat in Alausa, Ikeja. Whether you&#x27;re stopping by for a meal on a workday or meeting friends, come in, sit down and enjoy freshly prepared food.</p></div></section>
+<section id="contact" class="contact"><h2 class="reveal">Email us to ask about a visit</h2><div class="where">Alausa, Ikeja</div><a class="btn" href="#">Get in touch <i>&rarr;</i></a></section>
 <footer><span>&copy; 2026 Fenys Restaurant</span><span>Concept by Shadowville Studio</span></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -65,7 +65,7 @@ g.attachShader(pr,sh(g.VERTEX_SHADER,vs));g.attachShader(pr,sh(g.FRAGMENT_SHADER
 g.bindBuffer(g.ARRAY_BUFFER,g.createBuffer());g.bufferData(g.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),g.STATIC_DRAW);
 const l=g.getAttribLocation(pr,'p');g.enableVertexAttribArray(l);g.vertexAttribPointer(l,2,g.FLOAT,false,0,0);
 const U=k=>g.getUniformLocation(pr,k);let mx=.7,my=.6;addEventListener('mousemove',e=>{mx=e.clientX/innerWidth;my=1-e.clientY/innerHeight});
-g.uniform3f(U('a'),0.753,0.224,0.169);
+g.uniform3f(U('a'),0.753,0.325,0.169);
 const fit=()=>{c.width=c.clientWidth*.6;c.height=c.clientHeight*.6;g.viewport(0,0,c.width,c.height)};fit();addEventListener('resize',fit);
 (function f(s){g.uniform1f(U('t'),s/1000);g.uniform2f(U('r'),c.width,c.height);g.uniform2f(U('m'),mx,my);g.drawArrays(g.TRIANGLE_STRIP,0,4);requestAnimationFrame(f)})(0);})();
 const cur=document.getElementById('cur');addEventListener('mousemove',e=>gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.25}));

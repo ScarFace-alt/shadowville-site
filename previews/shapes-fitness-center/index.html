@@ -3,7 +3,7 @@
 <title>Shapes Fitness Center - concept preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{--a:#E85D04;--fg:#f4f1ec;--mute:#8a8780}*{box-sizing:border-box;margin:0;padding:0}
+:root{--a:#E4572E;--fg:#f4f1ec;--mute:#8a8780}*{box-sizing:border-box;margin:0;padding:0}
 html{background:#000}body{background:#000;color:var(--fg);font:300 17px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;cursor:none}
 a{color:inherit;text-decoration:none;cursor:none}
 .note{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:50;background:#000c;backdrop-filter:blur(8px);border:1px solid #fff2;color:#aaa;font-size:12px;padding:6px 14px;border-radius:99px;white-space:nowrap}
@@ -45,11 +45,11 @@ footer{display:flex;justify-content:space-between;padding:30px 6vw 70px;color:va
 <nav><b>Shapes Fitness Center</b><div><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
 <header class="hero"><canvas id="gl"></canvas><div class="hero-in">
 <div class="kicker">gym · Mende, Maryland</div><h1 id="h1">Shapes Fitness Center</h1>
-<p class="tag reveal">Your neighborhood gym in Mende, Maryland</p><a class="btn reveal" href="#contact">Visit Shapes Fitness Center or send us an email at sfc@africamail.com <i>&rarr;</i></a></div></header>
-<div class="marquee"><div>Strength Training · Cardio Workouts · Stay Active Locally <em>&#10022;</em> Strength Training · Cardio Workouts · Stay Active Locally <em>&#10022;</em> Strength Training · Cardio Workouts · Stay Active Locally <em>&#10022;</em> Strength Training · Cardio Workouts · Stay Active Locally <em>&#10022;</em> Strength Training · Cardio Workouts · Stay Active Locally <em>&#10022;</em> Strength Training · Cardio Workouts · Stay Active Locally <em>&#10022;</em> </div></div>
-<section id="services"><h2 class="reveal">What we offer</h2><div class="row reveal"><span class="num">01</span><h3>Strength Training</h3><p>Weights and equipment to build strength at your own pace.</p></div><div class="row reveal"><span class="num">02</span><h3>Cardio Workouts</h3><p>Get your heart rate up and improve your endurance.</p></div><div class="row reveal"><span class="num">03</span><h3>Stay Active Locally</h3><p>A gym close to home in Mende, so it&#x27;s easy to keep up a routine.</p></div></section>
-<section id="about" class="about"><div><div class="kicker">About</div><p class="reveal">Shapes Fitness Center is a gym in Mende, Maryland, a local place to train, build strength and stay active. Whether you&#x27;re just starting out or keeping up a routine, come in and make it part of your week.</p></div></section>
-<section id="contact" class="contact"><h2 class="reveal">Visit Shapes Fitness Center or send us an email at sfc@africamail.com</h2><div class="where">Mende, Maryland</div><a class="btn" href="#">Get in touch <i>&rarr;</i></a></section>
+<p class="tag reveal">Your neighborhood gym in Mende, Maryland</p><a class="btn reveal" href="#contact">Visit Shapes Fitness Center in Mende and start training. <i>&rarr;</i></a></div></header>
+<div class="marquee"><div>Strength Training · Cardio Workouts · Train Your Way <em>&#10022;</em> Strength Training · Cardio Workouts · Train Your Way <em>&#10022;</em> Strength Training · Cardio Workouts · Train Your Way <em>&#10022;</em> Strength Training · Cardio Workouts · Train Your Way <em>&#10022;</em> Strength Training · Cardio Workouts · Train Your Way <em>&#10022;</em> Strength Training · Cardio Workouts · Train Your Way <em>&#10022;</em> </div></div>
+<section id="services"><h2 class="reveal">What we offer</h2><div class="row reveal"><span class="num">01</span><h3>Strength Training</h3><p>Build strength and muscle with equipment for every level.</p></div><div class="row reveal"><span class="num">02</span><h3>Cardio Workouts</h3><p>Get your heart rate up and improve your stamina.</p></div><div class="row reveal"><span class="num">03</span><h3>Train Your Way</h3><p>Work out at your own pace, whatever your fitness goals are.</p></div></section>
+<section id="about" class="about"><div><div class="kicker">About</div><p class="reveal">Shapes Fitness Center is a gym in Mende, Maryland. It&#x27;s a place to train, build strength and stay active close to home. Whether you&#x27;re just starting out or already have a routine, come in and work out at your own pace.</p></div></section>
+<section id="contact" class="contact"><h2 class="reveal">Visit Shapes Fitness Center in Mende and start training.</h2><div class="where">Mende, Maryland</div><a class="btn" href="#">Get in touch <i>&rarr;</i></a></section>
 <footer><span>&copy; 2026 Shapes Fitness Center</span><span>Concept by Shadowville Studio</span></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -65,7 +65,7 @@ g.attachShader(pr,sh(g.VERTEX_SHADER,vs));g.attachShader(pr,sh(g.FRAGMENT_SHADER
 g.bindBuffer(g.ARRAY_BUFFER,g.createBuffer());g.bufferData(g.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),g.STATIC_DRAW);
 const l=g.getAttribLocation(pr,'p');g.enableVertexAttribArray(l);g.vertexAttribPointer(l,2,g.FLOAT,false,0,0);
 const U=k=>g.getUniformLocation(pr,k);let mx=.7,my=.6;addEventListener('mousemove',e=>{mx=e.clientX/innerWidth;my=1-e.clientY/innerHeight});
-g.uniform3f(U('a'),0.910,0.365,0.016);
+g.uniform3f(U('a'),0.894,0.341,0.180);
 const fit=()=>{c.width=c.clientWidth*.6;c.height=c.clientHeight*.6;g.viewport(0,0,c.width,c.height)};fit();addEventListener('resize',fit);
 (function f(s){g.uniform1f(U('t'),s/1000);g.uniform2f(U('r'),c.width,c.height);g.uniform2f(U('m'),mx,my);g.drawArrays(g.TRIANGLE_STRIP,0,4);requestAnimationFrame(f)})(0);})();
 const cur=document.getElementById('cur');addEventListener('mousemove',e=>gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.25}));
