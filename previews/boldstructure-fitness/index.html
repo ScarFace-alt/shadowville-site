@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>BoldStructure Fitness - concept preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--a:#E4572E;--fg:#f4f1ec;--mute:#8a8780}*{box-sizing:border-box;margin:0;padding:0}
+html{background:#000}body{background:#000;color:var(--fg);font:300 17px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;cursor:none}
+a{color:inherit;text-decoration:none;cursor:none}
+.note{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:50;background:#000c;backdrop-filter:blur(8px);border:1px solid #fff2;color:#aaa;font-size:12px;padding:6px 14px;border-radius:99px;white-space:nowrap}
+nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:24px 6vw;mix-blend-mode:difference}
+nav b{font:600 20px Fraunces,serif;letter-spacing:.02em}nav a{margin-left:28px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+#gl{position:absolute;inset:0;width:100%;height:100%}
+.hero{position:relative;height:100svh;display:flex;align-items:flex-end;padding:0 6vw 12vh;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;mix-blend-mode:screen}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#000 5%,transparent 65%)}
+.hero-in{position:relative;z-index:2}.kicker{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--a);margin-bottom:22px}
+h1{font:300 clamp(46px,9vw,132px)/.95 Fraunces,serif;letter-spacing:-.03em;max-width:12ch}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top}h1 .w span{display:inline-block}
+.tag{font-size:20px;color:#d8d4cc;max-width:40ch;margin:28px 0 38px}
+.btn{display:inline-flex;gap:12px;align-items:center;background:var(--a);color:#000;padding:16px 30px;border-radius:99px;font-weight:600;font-size:15px}
+.btn i{font-style:normal;transition:transform .3s}.btn:hover i{transform:translateX(5px)}
+.marquee{border-block:1px solid #ffffff1a;overflow:hidden;white-space:nowrap;padding:26px 0}
+.marquee div{display:inline-block;font:300 clamp(28px,4vw,54px) Fraunces,serif;color:#ffffff30;animation:m 30s linear infinite}
+.marquee em{color:var(--a);font-style:normal;margin:0 .5em}@keyframes m{to{transform:translateX(-50%)}}
+section{padding:18vh 6vw}h2{font:300 clamp(34px,5vw,68px)/1.05 Fraunces,serif;letter-spacing:-.02em;margin-bottom:6vh}
+.row{display:grid;grid-template-columns:80px 1fr 1.4fr;gap:4vw;align-items:baseline;padding:38px 0;border-top:1px solid #ffffff1a;transition:padding .4s}
+.row:hover{padding-left:16px}.row:hover h3{color:var(--a)}.num{color:var(--mute);font-size:14px}
+.row h3{font:400 clamp(24px,2.6vw,36px) Fraunces,serif;transition:color .3s}.row p{color:#bdb9b1}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
+.about-img{aspect-ratio:4/5;overflow:hidden;border-radius:6px}.about-img img{width:100%;height:120%;object-fit:cover}
+.about p{font:300 clamp(22px,2.2vw,30px)/1.45 Fraunces,serif;color:#e8e4dc}
+.contact{text-align:center;padding:24vh 6vw}.contact h2{font-size:clamp(48px,9vw,140px);margin-bottom:4vh}
+.contact .where{color:var(--mute);margin-bottom:40px;letter-spacing:.2em;text-transform:uppercase;font-size:13px}
+footer{display:flex;justify-content:space-between;padding:30px 6vw 70px;color:var(--mute);font-size:13px;border-top:1px solid #ffffff1a}
+#cur{position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:var(--a);pointer-events:none;z-index:99;mix-blend-mode:difference;transform:translate(-50%,-50%);transition:width .25s,height .25s}
+#cur.big{width:64px;height:64px}
+.grain{position:fixed;inset:-50%;z-index:60;pointer-events:none;opacity:.06;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:g 1s steps(4) infinite}
+@keyframes g{to{transform:translate(5%,-5%)}}
+#veil{position:fixed;inset:0;background:#000;z-index:100;display:flex;align-items:center;justify-content:center;font:300 28px Fraunces,serif;color:var(--a)}
+@media (max-width:760px){body,a{cursor:auto}#cur{display:none}nav div{display:none}.row{grid-template-columns:40px 1fr}.row p{grid-column:2}.about{grid-template-columns:1fr}.note{font-size:10px;white-space:normal;width:90%;text-align:center}}
+@media (prefers-reduced-motion:reduce){.marquee div,.grain{animation:none}}
+</style></head><body>
+<div id="veil">BoldStructure Fitness</div><div id="cur"></div><div class="grain"></div>
+<div class="note">Concept preview by Shadowville Studio for BoldStructure Fitness · not their official site · illustrative images</div>
+<nav><b>BoldStructure Fitness</b><div><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+<header class="hero"><canvas id="gl"></canvas><div class="hero-in">
+<div class="kicker">gym · Fagba, Ikeja</div><h1 id="h1">BoldStructure Fitness</h1>
+<p class="tag reveal">Your gym in Fagba, Ikeja. Come in, train hard, get stronger.</p><a class="btn reveal" href="#contact">Get in touch to start training at BoldStructure Fitness <i>&rarr;</i></a></div></header>
+<div class="marquee"><div>Gym Training · Strength &amp; Conditioning · Local &amp; Convenient <em>&#10022;</em> Gym Training · Strength &amp; Conditioning · Local &amp; Convenient <em>&#10022;</em> Gym Training · Strength &amp; Conditioning · Local &amp; Convenient <em>&#10022;</em> Gym Training · Strength &amp; Conditioning · Local &amp; Convenient <em>&#10022;</em> Gym Training · Strength &amp; Conditioning · Local &amp; Convenient <em>&#10022;</em> Gym Training · Strength &amp; Conditioning · Local &amp; Convenient <em>&#10022;</em> </div></div>
+<section id="services"><h2 class="reveal">What we offer</h2><div class="row reveal"><span class="num">01</span><h3>Gym Training</h3><p>Train with weights and equipment in a space built for working out.</p></div><div class="row reveal"><span class="num">02</span><h3>Strength &amp; Conditioning</h3><p>Build strength, stamina and fitness one session at a time.</p></div><div class="row reveal"><span class="num">03</span><h3>Local &amp; Convenient</h3><p>Close to home in Fagba, Ikeja, so it&#x27;s easy to train regularly.</p></div></section>
+<section id="about" class="about"><div><div class="kicker">About</div><p class="reveal">BoldStructure Fitness is a gym in Fagba, Ikeja. It&#x27;s a local place to train, build strength and stick with your fitness goals. Whether you&#x27;re just starting out or already training regularly, you&#x27;ll find space to work at your own pace.</p></div></section>
+<section id="contact" class="contact"><h2 class="reveal">Get in touch to start training at BoldStructure Fitness</h2><div class="where">Fagba, Ikeja</div><a class="btn" href="#">Get in touch <i>&rarr;</i></a></section>
+<footer><span>&copy; 2026 BoldStructure Fitness</span><span>Concept by Shadowville Studio</span></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(()=>{const c=document.getElementById('gl'),g=c.getContext('webgl');if(!g)return;
+const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0,1);}',
+fs='precision mediump float;uniform float t;uniform vec2 r;uniform vec2 m;uniform vec3 a;'+
+'void main(){vec2 u=gl_FragCoord.xy/r;vec2 q=u*3.;float f=0.;for(int i=1;i<6;i++){q+=vec2(sin(q.y*1.3+t*.2),cos(q.x*1.1-t*.15))*.45;f+=sin(q.x*float(i))*sin(q.y*float(i))/float(i);}'+
+'float d=distance(u,m);vec3 col=a*(.35+.45*f)*smoothstep(1.1,.1,u.y+.2)+a*.25*smoothstep(.35,0.,d);gl_FragColor=vec4(col*.9,1);}';
+const sh=(t,s)=>{const o=g.createShader(t);g.shaderSource(o,s);g.compileShader(o);return o},pr=g.createProgram();
+g.attachShader(pr,sh(g.VERTEX_SHADER,vs));g.attachShader(pr,sh(g.FRAGMENT_SHADER,fs));g.linkProgram(pr);g.useProgram(pr);
+g.bindBuffer(g.ARRAY_BUFFER,g.createBuffer());g.bufferData(g.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),g.STATIC_DRAW);
+const l=g.getAttribLocation(pr,'p');g.enableVertexAttribArray(l);g.vertexAttribPointer(l,2,g.FLOAT,false,0,0);
+const U=k=>g.getUniformLocation(pr,k);let mx=.7,my=.6;addEventListener('mousemove',e=>{mx=e.clientX/innerWidth;my=1-e.clientY/innerHeight});
+g.uniform3f(U('a'),0.894,0.341,0.180);
+const fit=()=>{c.width=c.clientWidth*.6;c.height=c.clientHeight*.6;g.viewport(0,0,c.width,c.height)};fit();addEventListener('resize',fit);
+(function f(s){g.uniform1f(U('t'),s/1000);g.uniform2f(U('r'),c.width,c.height);g.uniform2f(U('m'),mx,my);g.drawArrays(g.TRIANGLE_STRIP,0,4);requestAnimationFrame(f)})(0);})();
+const cur=document.getElementById('cur');addEventListener('mousemove',e=>gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.25}));
+document.querySelectorAll('a,.row').forEach(el=>{el.onmouseenter=()=>cur.classList.add('big');el.onmouseleave=()=>cur.classList.remove('big')});
+const h=document.getElementById('h1');h.innerHTML=h.textContent.split(' ').map(w=>'<span class="w"><span>'+w+'&nbsp;</span></span>').join('');
+gsap.registerPlugin(ScrollTrigger);
+if(window.Lenis){const ln=new Lenis({lerp:.09});ln.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>ln.raf(t*1000));gsap.ticker.lagSmoothing(0)}
+gsap.timeline().to('#veil',{yPercent:-100,duration:1.1,ease:'expo.inOut',delay:.5})
+.from('#h1 .w span',{yPercent:110,duration:1.2,stagger:.08,ease:'expo.out'},'-=.4').from('.kicker',{opacity:0,y:20,duration:.8},'-=.9');
+document.querySelectorAll('.reveal').forEach(el=>gsap.from(el,{opacity:0,y:50,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+if(document.querySelector('.hero-img'))gsap.to('.hero-img',{yPercent:18,scale:1.08,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+document.querySelectorAll('[data-speed] img').forEach(i=>gsap.fromTo(i,{yPercent:-10},{yPercent:5,ease:'none',scrollTrigger:{trigger:i.parentNode,scrub:true}}));
+</script></body></html>
